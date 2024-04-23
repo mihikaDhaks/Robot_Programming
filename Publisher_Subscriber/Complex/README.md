@@ -59,9 +59,6 @@ Creating symlink "/home/mika/catkin_ws/src/CMakeLists.txt" pointing to "/opt/ros
 #### Running command: "make -j1 -l1" in "/home/mika/catkin_ws/build"
 ####
 
-mika@mika:~/catkin_ws$ ls
-build  devel  src
-
 mika@mika:~/catkin_ws$ cd devel
 
 mika@mika:~/catkin_ws/devel$ source setup.bash
