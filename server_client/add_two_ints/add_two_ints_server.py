@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import rospy
-from server_client.srv import AddTwoInts
+from rospy_tutorials.srv import AddTwoInts
 import re
 
 
