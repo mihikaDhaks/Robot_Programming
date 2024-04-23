@@ -5,6 +5,6 @@ from std_msgs.msg import Float32
 def callback(msg):
     print(msg.data)
     
-rospy.init_node('topic_subscriber')
+rospy.init_node('quad_sub')
 sub = rospy.Subscriber('counter', Float32, callback)
 rospy.spin()
