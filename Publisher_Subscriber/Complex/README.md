@@ -2,12 +2,19 @@ Creating Workspace
 ===============================================================================
 
 mkdir catkin_ws
+
 cd catkin_ws
+
 mkdir src
+
 catkin_make
+
 ls
+
 cd devel
+
 source setup.bash
+
 gedit ~/.bashrc
 
 Creating Package
