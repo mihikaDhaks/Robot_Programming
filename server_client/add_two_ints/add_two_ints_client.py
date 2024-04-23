@@ -1,20 +1,17 @@
-#!/usr/bin/env python3
+#!/usr/bin/env/python3
 
 import rospy
-from server_client.srv import AddTwoInts
-import re
+from rospy_tutorials.srv import AddTwoInts
 
-
-def handle_add_two_ints(req):
-    result = req.a + req.b
-    rospy.loginfo("sum of " + str(req.a) + " and " + str(req.b) + " is " + str(result))
-    return result
-    
 if __name__ == '__main__':
-    rospy.init_node("add_two_ints_server")
-    rospy.loginfo("add two ints server node created")
+ 
+    rospy.init_node("add_two_ints_client")
+ 
+    rospy.wait_for_service("/add_two_ints")
 
-    service=rospy.Service("/add_two_ints", AddTwoInts, handle_add_two_ints)
-    rospy.loginfo("service server has been started")
-    
-    rospy.spin()
+    try:
+        add_two_ints=rospy.ServiceProxy("/add_two_ints", AddTwoInts)
+        response = add_two_ints(2,6)
+        rospy.loginfo("Sum is : " + str(response.sum))
+    except rospy.ServiceException as e:
+        rospy.logwarn("service failed: " + str(e))
