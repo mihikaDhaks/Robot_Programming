@@ -3,7 +3,7 @@ import rospy
 from std_msgs.msg import Float32
 import math 
 
-rospy.init_node('topic_publisher')
+rospy.init_node('quad_pub')
 pub = rospy.Publisher('counter', Float32, queue_size=50)
 rate = rospy.Rate(2)
 a =  float(input("Enter values of a:"))
