@@ -1,4 +1,5 @@
-1. Creating Workspace
+Creating Workspace
+===============================================================================
 
 mika@mika:~$ mkdir catkin_ws
 mika@mika:~$ cd catkin_ws
@@ -59,8 +60,9 @@ mika@mika:~/catkin_ws$ cd devel
 mika@mika:~/catkin_ws/devel$ source setup.bash
 mika@mika:~/catkin_ws/devel$ gedit ~/.bashrc
 
-2. Creating Package
-   
+Creating Package
+===============================================================================
+
 mika@mika:~$ cd catkin_ws
 mika@mika:~/catkin_ws$ cd src
 mika@mika:~/catkin_ws/src$ catkin_create_pkg publisher_subscriber rospy std_msgs
@@ -123,7 +125,9 @@ mika@mika:~/catkin_ws/src/publisher_subscriber/scripts$ gedit complex_sub.py
 mika@mika:~/catkin_ws/src/publisher_subscriber/scripts$ chmod +x complex_pub.py
 mika@mika:~/catkin_ws/src/publisher_subscriber/scripts$ chmod +x complex_sub.py
 
-3. Building ROS Package
+Building ROS Package
+===============================================================================
+
 mika@mika:~/catkin_ws$ catkin_make
 Base path: /home/mika/catkin_ws
 Source space: /home/mika/catkin_ws/src
@@ -178,7 +182,9 @@ Install space: /home/mika/catkin_ws/install
 [100%] Built target publisher_subscriber_generate_messages_cpp
 [100%] Built target publisher_subscriber_generate_messages
 
-4. Run roscore
+Run roscore
+===============================================================================
+
 mika@mika:~/catkin_ws/src/publisher_subscriber/scripts$ roscore
 ... logging to /home/mika/.ros/log/85e401e0-0144-11ef-ad78-812bbe4cefea/roslaunch-mika-5241.log
 Checking log directory for disk usage. This may take a while.
@@ -206,7 +212,9 @@ setting /run_id to 85e401e0-0144-11ef-ad78-812bbe4cefea
 process[rosout-1]: started with pid [5261]
 started core service [/rosout]
 
-5. Execute Python Files
+Execute Python Files
+===============================================================================
+
 mika@mika:~/catkin_ws/src/publisher_subscriber/scripts$ source ~/catkin_ws/devel/setup.bash
 mika@mika:~/catkin_ws/src/publisher_subscriber/scripts$ chmod +x complex_pub.py
 mika@mika:~/catkin_ws/src/publisher_subscriber/scripts$ python3 complex_pub.py
