@@ -1,21 +1,73 @@
 Creating Workspace
 ===============================================================================
 
-mkdir catkin_ws
+mika@mika:~$ mkdir catkin_ws
 
-cd catkin_ws
+mika@mika:~$ cd catkin_ws
 
-mkdir src
+mika@mika:~/catkin_ws$ mkdir src
 
-catkin_make
+mika@mika:~/catkin_ws$ catkin_make
 
-ls
+Base path: /home/mika/catkin_ws
+Source space: /home/mika/catkin_ws/src
+Build space: /home/mika/catkin_ws/build
+Devel space: /home/mika/catkin_ws/devel
+Install space: /home/mika/catkin_ws/install
+Creating symlink "/home/mika/catkin_ws/src/CMakeLists.txt" pointing to "/opt/ros/noetic/share/catkin/cmake/toplevel.cmake"
+####
+#### Running command: "cmake /home/mika/catkin_ws/src -DCATKIN_DEVEL_PREFIX=/home/mika/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mika/catkin_ws/install -G Unix Makefiles" in "/home/mika/catkin_ws/build"
+####
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/mika/catkin_ws/devel
+-- Using CMAKE_PREFIX_PATH: /opt/ros/noetic
+-- This workspace overlays: /opt/ros/noetic
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using Debian Python package layout
+-- Found PY_em: /usr/lib/python3/dist-packages/em.py  
+-- Using empy: /usr/lib/python3/dist-packages/em.py
+-- Using CATKIN_ENABLE_TESTING: ON
+-- Call enable_testing()
+-- Using CATKIN_TEST_RESULTS_DIR: /home/mika/catkin_ws/build/test_results
+-- Forcing gtest/gmock from source, though one was otherwise available.
+-- Found gtest sources under '/usr/src/googletest': gtests will be built
+-- Found gmock sources under '/usr/src/googletest': gmock will be built
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found Threads: TRUE  
+-- Using Python nosetests: /usr/bin/nosetests3
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mika/catkin_ws/build
+####
+#### Running command: "make -j1 -l1" in "/home/mika/catkin_ws/build"
+####
 
-cd devel
+mika@mika:~/catkin_ws$ ls
+build  devel  src
 
-source setup.bash
+mika@mika:~/catkin_ws$ cd devel
 
-gedit ~/.bashrc
+mika@mika:~/catkin_ws/devel$ source setup.bash
+
+mika@mika:~/catkin_ws/devel$ gedit ~/.bashrc
+
 
 Creating Package
 ===============================================================================
