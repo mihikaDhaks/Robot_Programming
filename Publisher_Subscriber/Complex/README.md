@@ -1,15 +1,14 @@
 Creating Workspace
 ===============================================================================
 
-mika@mika:~$ mkdir catkin_ws
-mika@mika:~$ cd catkin_ws
-mika@mika:~/catkin_ws$ mkdir src
-mika@mika:~/catkin_ws$ catkin_make
-mika@mika:~/catkin_ws$ ls
-build  devel  src
-mika@mika:~/catkin_ws$ cd devel
-mika@mika:~/catkin_ws/devel$ source setup.bash
-mika@mika:~/catkin_ws/devel$ gedit ~/.bashrc
+mkdir catkin_ws
+cd catkin_ws
+mkdir src
+catkin_make
+ls
+cd devel
+source setup.bash
+gedit ~/.bashrc
 
 Creating Package
 ===============================================================================
